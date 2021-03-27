@@ -22,7 +22,7 @@ environment:
 
 dependencies:
   mobx: any
-  flutter_modular: any
+  flutter_modular: ^3.0.2+1
   flutter_mobx: any
   build_runner: any
   flutter:

@@ -19,6 +19,8 @@ class MovimentacaoRepository extends MovimentacaoInterface {
         Veiculo(1, 'Chevrolet Onix', 'MKS1024'), "24/03/2021 15:00:00"),
     Movimentacao(6, 330, Motorista(1, 'Danilo', '0606560402'), 'ENTRADA', 1,
         Veiculo(1, 'Fiat Mobi', 'BMO3409'), "23/03/2021 18:00:00"),
+    Movimentacao(6, 330, Motorista(1, 'Danilo', '0606560402'), 'ENTRADA', 1,
+        Veiculo(1, 'Fiat Mobi', 'BMO3409'), "23/03/2021 18:00:00"),
   ];
 
   List<Movimentacao> getAllMovimentacoes() {

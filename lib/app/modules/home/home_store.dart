@@ -13,20 +13,13 @@ abstract class HomeStoreBase with Store {
   String error;
 
   @observable
-  int totalVagas = 0;
-
-  @observable
-  List<int> vagasOcupadas = [];
+  int vagasDisponiveis;
 
   @observable
   ObservableList<Vaga> vagas;
 
   HomeStoreBase(this.repository) {
     vagas = repository.getAllVagas().asObservable();
-    totalVagas = vagas.length;
-  }
-
-  int getVagasDisponiveis() {
-    return (this.totalVagas - this.vagasOcupadas.length);
+    vagasDisponiveis = repository.vagasDisponiveis();
   }
 }

@@ -16,4 +16,12 @@ class HomeRepository extends HomeInterface {
       Vaga(5, 'ALA NEUTRA', movimentacaoRepository.getMovimentacoesPorVaga(5)),
     ];
   }
+
+  int vagasDisponiveis() {
+    return this
+        .getAllVagas()
+        .where((Vaga vaga) => vaga.ocupado != true)
+        .toList()
+        .length;
+  }
 }
