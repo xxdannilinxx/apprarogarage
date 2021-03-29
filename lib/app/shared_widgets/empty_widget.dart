@@ -4,7 +4,7 @@ class EmptyText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('Nenhuma movimentação encontrada na vaga até o momento.'),
+      child: Text('Nenhuma informação encontrada até o momento.'),
     );
   }
 }
